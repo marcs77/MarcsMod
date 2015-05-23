@@ -1,5 +1,6 @@
 package com.marcs.marcsmod;
 
+import com.marcs.marcsmod.creativetab.CreativeTabMarcs;
 import com.marcs.marcsmod.handler.ConfigHandler;
 import com.marcs.marcsmod.item.ModItems;
 import com.marcs.marcsmod.proxy.CommonProxy;
@@ -11,6 +12,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.creativetab.CreativeTabs;
 
 /**
  * Marcs Mod por marcs77
@@ -19,12 +21,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Info.NOMBRE_INTERNO, name = Info.NOMBRE_EXTERNO, version = Info.VERSION, guiFactory = Info.GUIFACTORY)
 public class MarcsMod {
 
+    public static final CreativeTabs MARCS_TAB = new CreativeTabMarcs();
     @Mod.Instance(Info.NOMBRE_INTERNO)
     public static MarcsMod miMod;
-
     @SidedProxy(clientSide = Info.CLIENTPROXY, serverSide = Info.SERVERPROXY)
     public static CommonProxy proxy;
-
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent evento) {

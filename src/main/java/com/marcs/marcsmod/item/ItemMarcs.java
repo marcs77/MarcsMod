@@ -1,5 +1,6 @@
 package com.marcs.marcsmod.item;
 
+import com.marcs.marcsmod.MarcsMod;
 import com.marcs.marcsmod.reference.Info;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,7 +17,8 @@ public class ItemMarcs extends Item {
         super();
         this.setUnlocalizedName(un);
         ModItems.register(this, un);
-        //añadir pestaña de creativo
+        //añadir a la pestaña de creativo
+        this.setCreativeTab(MarcsMod.MARCS_TAB);
 
     }
 
