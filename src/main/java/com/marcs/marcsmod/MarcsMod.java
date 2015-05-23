@@ -1,6 +1,7 @@
 package com.marcs.marcsmod;
 
 import com.marcs.marcsmod.handler.ConfigHandler;
+import com.marcs.marcsmod.item.ModItems;
 import com.marcs.marcsmod.proxy.CommonProxy;
 import com.marcs.marcsmod.reference.Info;
 import com.marcs.marcsmod.util.Logger;
@@ -34,6 +35,8 @@ public class MarcsMod {
 
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
         ConfigHandler.init(evento);
+
+        ModItems.init();
 
         Logger.info("Texto: " + ConfigHandler.prueba);
 

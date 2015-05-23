@@ -12,4 +12,6 @@ public class Info {
     public static final String CLIENTPROXY = "com.marcs.marcsmod.proxy.ClientProxy";
     public static final String SERVERPROXY = "com.marcs.marcsmod.proxy.ServerProxy";
     public static final String GUIFACTORY = "com.marcs.marcsmod.client.gui.GuiFactory";
+
+    public static final String RESOURCEPREFIX = NOMBRE_INTERNO.toLowerCase() + ":";
 }
