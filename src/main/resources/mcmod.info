@@ -1,0 +1,16 @@
+[
+{
+  "modid": "marcsmod",
+  "name": "Marcs Mod",
+  "description": "Mod de ejemplo",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Marcos"],
+  "credits": ":3",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
