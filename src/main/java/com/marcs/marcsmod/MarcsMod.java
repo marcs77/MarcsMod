@@ -1,5 +1,6 @@
 package com.marcs.marcsmod;
 
+import com.marcs.marcsmod.block.ModBlocks;
 import com.marcs.marcsmod.creativetab.CreativeTabMarcs;
 import com.marcs.marcsmod.handler.ConfigHandler;
 import com.marcs.marcsmod.item.ModItems;
@@ -38,6 +39,7 @@ public class MarcsMod {
         ConfigHandler.init(evento);
 
         ModItems.init();
+        ModBlocks.init();
 
         Logger.info("Texto: " + ConfigHandler.prueba);
 
