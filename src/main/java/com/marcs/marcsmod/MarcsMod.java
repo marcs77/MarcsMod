@@ -23,8 +23,10 @@ import net.minecraft.creativetab.CreativeTabs;
 public class MarcsMod {
 
     public static final CreativeTabs MARCS_TAB = new CreativeTabMarcs();
+
     @Mod.Instance(Info.NOMBRE_INTERNO)
     public static MarcsMod miMod;
+
     @SidedProxy(clientSide = Info.CLIENTPROXY, serverSide = Info.SERVERPROXY)
     public static CommonProxy proxy;
 

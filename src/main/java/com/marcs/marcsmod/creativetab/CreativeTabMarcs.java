@@ -19,8 +19,4 @@ public class CreativeTabMarcs extends CreativeTabs {
         return ModItems.generico;
     }
 
-    @Override
-    public String getTranslatedTabLabel() {
-        return Info.NOMBRE_EXTERNO;
-    }
 }
