@@ -3,6 +3,7 @@ package com.marcs.marcsmod;
 import com.marcs.marcsmod.block.ModBlocks;
 import com.marcs.marcsmod.creativetab.CreativeTabMarcs;
 import com.marcs.marcsmod.handler.ConfigHandler;
+import com.marcs.marcsmod.handler.RecipesHandler;
 import com.marcs.marcsmod.item.ModItems;
 import com.marcs.marcsmod.proxy.CommonProxy;
 import com.marcs.marcsmod.reference.Info;
@@ -54,6 +55,8 @@ public class MarcsMod {
 
         //Iniciar GUIs, TileEntities, crafteos, EventHandlers ...
         proxy.init();
+
+        RecipesHandler.registerRecipes();
 
         Logger.info("Inicio completado");
 
