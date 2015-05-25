@@ -3,7 +3,7 @@ package com.marcs.marcsmod.reference;
 /**
  * Marcs Mod por marcs77
  */
-public class Info {
+public final class Info {
     public static final String NOMBRE_INTERNO = "marcsmod";
     public static final String NOMBRE_EXTERNO = "Marcs Mod";
 

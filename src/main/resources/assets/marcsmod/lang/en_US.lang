@@ -1,7 +1,13 @@
+# Creative tab
 itemGroup.marcsmod=Marcs Mod
 
+# Teclas
+keys.marcsmod.category=Marcs Mod
+keys.marcsmod.charge=Cargar
+keys.marcsmod.release=Descargar
 
+# Items
 item.marcsmod:generico.name=Item Genérico Nº -3
 
-
+# Bloques
 tile.marcsmod:bloqueGenerico=Bloque Randum

@@ -1,6 +1,7 @@
 package com.marcs.marcsmod;
 
 import com.marcs.marcsmod.block.ModBlocks;
+import com.marcs.marcsmod.client.handler.KeyEventHandler;
 import com.marcs.marcsmod.creativetab.CreativeTabMarcs;
 import com.marcs.marcsmod.handler.ConfigHandler;
 import com.marcs.marcsmod.handler.RecipesHandler;
@@ -37,7 +38,6 @@ public class MarcsMod {
         //Iniciar configuraciones, keybinds, items, bloques ...
         proxy.preInit();
 
-
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
         ConfigHandler.init(evento);
 
@@ -55,6 +55,8 @@ public class MarcsMod {
 
         //Iniciar GUIs, TileEntities, crafteos, EventHandlers ...
         proxy.init();
+
+        FMLCommonHandler.instance().bus().register(new KeyEventHandler());
 
         RecipesHandler.registerRecipes();
 
